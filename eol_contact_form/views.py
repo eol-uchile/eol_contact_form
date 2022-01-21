@@ -12,6 +12,7 @@ from openedx.core.djangoapps.site_configuration import helpers as configuration_
 from django.core.mail import EmailMultiAlternatives
 from django.utils.html import strip_tags
 from django.template.loader import render_to_string
+from django.utils.translation import ugettext as _
 
 from itertools import cycle
 import requests
@@ -89,32 +90,32 @@ class EolContactFormView(View):
         if not self.validate_rut(data['form-rut']):
             return {
                 'error': True,
-                'error_attr': 'Rut'
+                'error_attr': _("Rut")
             }
         if data['form-name'].strip() == '':
             return {
                 'error': True,
-                'error_attr': 'Nombre'
+                'error_attr': _("Nombre")
             }
         if data['form-email'].strip() == '' or '@' not in data['form-email']:
             return {
                 'error': True,
-                'error_attr': 'Email'
+                'error_attr': _("Email")
             }
         if data['form-type'].strip() == '':
             return {
                 'error': True,
-                'error_attr': 'Categoria'
+                'error_attr': _("Categoria")
             }
         if data['form-course'].strip() == '' and data['form-type'] == 'curso':
             return {
                 'error': True,
-                'error_attr': 'Curso'
+                'error_attr': _("Curso")
             }
         if data['form-message'].strip() == '':
             return {
                 'error': True,
-                'error_attr': 'Mensaje'
+                'error_attr': _("Mensaje")
             }
         if not self.validate_recaptcha(data['g-recaptcha-response']):
             return {

@@ -62,3 +62,7 @@ target/
 
 #OSX
 *.DS_Store
+
+# openedx test files
+test_root/
+setup.cfg

@@ -8,6 +8,28 @@ New Page for Open Edx LMS (EOL) with a contact form
 
     docker-compose exec lms pip install -e /openedx/requirements/eol_contact_form
 
+## Translation
+
+**Install**
+
+    docker run -it --rm -w /code -v $(pwd):/code python:3.8 bash
+    pip install -r requirements.txt
+    make create_translations_catalogs
+    add your translation in .po files
+
+**Compile**
+
+    docker run -it --rm -w /code -v $(pwd):/code python:3.8 bash
+    pip install -r requirements.txt
+    make compile_translations
+
+**Update**
+
+    docker run -it --rm -w /code -v $(pwd):/code python:3.8 bash
+    pip install -r requirements.txt
+    make update_translations
+
+
 # Configuration
 
 To enable [Google ReCAPTCHA v2](https://www.google.com/recaptcha/) Edit *production.py* in *lms settings* and add your own keys. Add help desk default email.

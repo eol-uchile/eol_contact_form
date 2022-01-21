@@ -1,0 +1,185 @@
+# English translations for PROJECT.
+# Copyright (C) 2022 EOL
+# This file is distributed under the same license as the PROJECT project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"Report-Msgid-Bugs-To: eol-ayuda@uchile.cl\n"
+"POT-Creation-Date: 2022-01-21 15:37+0000\n"
+"PO-Revision-Date: 2022-01-21 15:37+0000\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: en\n"
+"Language-Team: en <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: eol_contact_form/views.py:93
+msgid "Rut"
+msgstr ""
+
+#: eol_contact_form/templates/eol_contact_form/contact.html:46
+#: eol_contact_form/views.py:98
+msgid "Nombre"
+msgstr ""
+
+#: eol_contact_form/views.py:103
+msgid "Email"
+msgstr ""
+
+#: eol_contact_form/views.py:108
+msgid "Categoria"
+msgstr ""
+
+#: eol_contact_form/views.py:113
+msgid "Curso"
+msgstr ""
+
+#: eol_contact_form/views.py:118
+msgid "Mensaje"
+msgstr ""
+
+#: eol_contact_form/templates/emails/help_desk_email.txt:8
+msgid ""
+"<strong>{user_name} (Rut: {user_rut}; Username: {user_username})</strong>"
+" ha creado un ticket a traves de la plataforma: "
+"<strong>{platform_name}</strong>."
+msgstr ""
+
+#: eol_contact_form/templates/emails/help_desk_email.txt:10
+msgid ""
+"<strong>{user_name} (Rut: {user_rut})</strong> ha creado un ticket a "
+"traves de la plataforma: <strong>{platform_name}</strong>."
+msgstr ""
+
+#: eol_contact_form/templates/emails/help_desk_email.txt:12
+msgid "Categoria: <strong>{user_type_message}</strong>."
+msgstr ""
+
+#: eol_contact_form/templates/emails/help_desk_email.txt:14
+msgid "Curso: <strong>{user_course}</strong>."
+msgstr ""
+
+#: eol_contact_form/templates/emails/help_desk_email.txt:17
+msgid "Cuerpo del mensaje:"
+msgstr ""
+
+#: eol_contact_form/templates/eol_contact_form/contact.html:7
+#: eol_contact_form/templates/eol_contact_form/contact.html:16
+msgid "Formulario de Contacto"
+msgstr ""
+
+#: eol_contact_form/templates/eol_contact_form/contact.html:17
+msgid "¿Tienes dudas? ¿Necesitas ayuda?"
+msgstr ""
+
+#: eol_contact_form/templates/eol_contact_form/contact.html:18
+msgid ""
+"Llena el formulario y nuestra mesa de ayuda se pondrá en contacto a la "
+"brevedad."
+msgstr ""
+
+#: eol_contact_form/templates/eol_contact_form/contact.html:19
+msgid "El horario de atención de esta mesa de ayuda es de"
+msgstr ""
+
+#: eol_contact_form/templates/eol_contact_form/contact.html:19
+msgid "Lunes a Viernes de 9:00 a 18:00 Hrs."
+msgstr ""
+
+#: eol_contact_form/templates/eol_contact_form/contact.html:27
+msgid "¡Intente nuevamente!"
+msgstr ""
+
+#: eol_contact_form/templates/eol_contact_form/contact.html:27
+msgid "Hubo un problema al intentar generar su ticket."
+msgstr ""
+
+#: eol_contact_form/templates/eol_contact_form/contact.html:27
+msgid "Si el problema persiste, envíe un correo a "
+msgstr ""
+
+#: eol_contact_form/templates/eol_contact_form/contact.html:33
+msgid "Ingresa un"
+msgstr ""
+
+#: eol_contact_form/templates/eol_contact_form/contact.html:33
+msgid "válido"
+msgstr ""
+
+#: eol_contact_form/templates/eol_contact_form/contact.html:39
+msgid "¡Consulta enviada!"
+msgstr ""
+
+#: eol_contact_form/templates/eol_contact_form/contact.html:39
+msgid "Espera a que nuestra mesa de ayuda se ponga en contacto contigo."
+msgstr ""
+
+#: eol_contact_form/templates/eol_contact_form/contact.html:43
+msgid "Rut o Pasaporte"
+msgstr ""
+
+#: eol_contact_form/templates/eol_contact_form/contact.html:44
+msgid "Ingrese un rut válido (12345678-9), o pasaporte (P123456789)"
+msgstr ""
+
+#: eol_contact_form/templates/eol_contact_form/contact.html:47
+msgid "Ingresa tu nombre"
+msgstr ""
+
+#: eol_contact_form/templates/eol_contact_form/contact.html:49
+msgid "E-mail"
+msgstr ""
+
+#: eol_contact_form/templates/eol_contact_form/contact.html:50
+msgid "Ingresa tu correo electrónico"
+msgstr ""
+
+#: eol_contact_form/templates/eol_contact_form/contact.html:52
+msgid "Tipo de consulta"
+msgstr ""
+
+#: eol_contact_form/templates/eol_contact_form/contact.html:60
+msgid "Selecciona una opción"
+msgstr ""
+
+#: eol_contact_form/templates/eol_contact_form/contact.html:61
+msgid "General"
+msgstr ""
+
+#: eol_contact_form/templates/eol_contact_form/contact.html:62
+msgid "Dudas de un curso en específico"
+msgstr ""
+
+#: eol_contact_form/templates/eol_contact_form/contact.html:63
+msgid "Problemas con inicio de sesión"
+msgstr ""
+
+#: eol_contact_form/templates/eol_contact_form/contact.html:64
+msgid "Otro"
+msgstr ""
+
+#: eol_contact_form/templates/eol_contact_form/contact.html:66
+msgid "Nombre del curso"
+msgstr ""
+
+#: eol_contact_form/templates/eol_contact_form/contact.html:67
+msgid "Ingresa el nombre del curso con dudas"
+msgstr ""
+
+#: eol_contact_form/templates/eol_contact_form/contact.html:69
+msgid "Describa su problema"
+msgstr ""
+
+#: eol_contact_form/templates/eol_contact_form/contact.html:70
+msgid "Ingresa tus dudas y consultas en este campo de texto"
+msgstr ""
+
+#: eol_contact_form/templates/eol_contact_form/contact.html:74
+msgid "Enviar Consulta"
+msgstr ""
+
