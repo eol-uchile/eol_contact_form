@@ -16,6 +16,7 @@ from django.template.loader import render_to_string
 from itertools import cycle
 import requests
 import json
+import re
 
 
 import logging
@@ -29,6 +30,7 @@ def _default_data():
         'form-type': '',
         'form-course': '',
         'form-message': '',
+        'form-referrer': '',
     }
 
 
@@ -179,11 +181,17 @@ class EolContactFormView(View):
         help_desk_email = configuration_helpers.get_value(
             'EOL_CONTACT_FORM_HELP_DESK_EMAIL',
             settings.EOL_CONTACT_FORM_HELP_DESK_EMAIL)
+        user_form_referrer_course=""
+        if(data['form-referrer'].strip()!= ''):
+            user_form_referrer_course=re.findall('course-v1:[^/+]+\+[^/+]+\+[^/]+',data['form-referrer'])
         email_data = {
             "user_name": data['form-name'].strip().upper(),
             "user_username" : username.upper(),
             "user_rut": data['form-rut'],
             "user_message": data['form-message'].strip(),
+            "user_email": data['form-email'].strip(),
+            "user_form_referrer": data['form-referrer'].strip(),
+            "user_form_referrer_course": user_form_referrer_course,
             "user_type_message": data['form-type'].upper(),
             "user_course": data['form-course'].strip().upper(),
             "platform_name": platform_name,

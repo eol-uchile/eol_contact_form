@@ -8,7 +8,12 @@
     % else:
         <p>${("<strong>{user_name} (Rut: {user_rut})</strong> ha creado un ticket a traves de la plataforma: <strong>{platform_name}</strong>.").format(user_name=user_name, user_rut=user_rut, platform_name=platform_name)}</p>
     % endif
+    <p>User Email:<strong>${user_email}</strong>.</p>
     <p>${("Categoria: <strong>{user_type_message}</strong>.").format(user_type_message=user_type_message)}</p>
+     % if user_form_referrer != '':
+        <p>Pagina anterior:<strong>${user_form_referrer}</strong>.</p>
+        <p>Codigo del curso:<strong>${user_form_referrer_course}</strong>.</p>
+    % endif
     % if user_type_message == 'CURSO':
     <p>${("Curso: <strong>{user_course}</strong>.").format(user_course=user_course)}</p>
     % endif
