@@ -125,14 +125,17 @@ class EolContactFormView(View):
             'error': False
         }
 
-    def validate_recaptcha(self, recaptcha):
+    def validate_recaptcha(self, token):
         """
-            Validate Google Recaptcha V2
+            Validate Google Recaptcha Enterprise
         """
-        url = 'https://www.google.com/recaptcha/api/siteverify'
+        url = 'https://recaptchaenterprise.googleapis.com/v1/projects/{}/assessments?key={}'.format(settings.EOL_CONTACT_FORM_RECAPTCHA_PROJECT,settings.EOL_CONTACT_FORM_RECAPTCHA_API_KEY)
         body = {
-            'secret': settings.EOL_CONTACT_FORM_RECAPTCHA_SECRET_KEY,
-            'response': recaptcha
+            'event': {
+                'token': token,
+                'expectedAction': 'submit',
+                'siteKey': settings.EOL_CONTACT_FORM_RECAPTCHA_SITE_KEY
+            }
         }
         r = requests.post(url, data=body)
         r_data = r.json()

@@ -1,8 +1,8 @@
 var correctCaptcha = function(response) {
     if(response.length != 0) {
-        $('.form-submit').prop('disabled', false);;
+        $('.form-submit').prop('disabled', false);
     } else {
-        $('.form-submit').prop('disabled', true);;
+        $('.form-submit').prop('disabled', true);
     }
 };
 $(function() {

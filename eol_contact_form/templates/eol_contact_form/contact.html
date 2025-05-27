@@ -5,7 +5,7 @@
 <%namespace name='static' file='/static_content.html'/>
 <%inherit file="../main.html" />
 <%block name="pagetitle">${_("Formulario de Contacto")}</%block>
-<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+<script src="https://www.google.com/recaptcha/enterprise.js?render=${context.get('recaptcha_site_key', None)}"></script>
 <link rel="stylesheet" type="text/css" href="${static.url('eol_contact_form/css/main.css')}"/> 
 <% 
 data = context.get('data', None) 
@@ -69,7 +69,7 @@ data = context.get('data', None)
             <label for="form-message">Describa su problema</label>
             <textarea id="form-message" name="form-message" required placeholder="Ingresa tus dudas y consultas en este campo de texto" minlength="8">${data['form-message']}</textarea>
             <div class="google-recaptcha">
-                <div class="g-recaptcha" data-sitekey="${context.get('recaptcha_site_key', None)}" data-callback="correctCaptcha" data-expired-callback="correctCaptcha"></div>
+                <div class="g-recaptcha" data-sitekey="${context.get('recaptcha_site_key', None)}" data-callback="correctCaptcha" data-expired-callback="correctCaptcha" data-action="submit"></div>
             </div>
             <input disabled class="btn btn-primary form-submit" type="submit" value="Enviar Consulta">
         </form>
