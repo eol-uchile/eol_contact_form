@@ -1,5 +1,7 @@
 # EOL CONTACT FORM
 
+![Coverage Status](/coverage-badge.svg)
+
 ![https://github.com/eol-uchile/eol_contact_form/actions](https://github.com/eol-uchile/eol_contact_form/workflows/Python%20application/badge.svg)
 
 New Page for Open Edx LMS (EOL) with a contact form
@@ -23,8 +25,13 @@ Set help desk email in a Site:
 ## TESTS
 **Prepare tests:**
 
-    > cd .github/
-    > docker-compose run lms /openedx/requirements/eol_contact_form/.github/test.sh
+- Install **act** following the instructions in [https://nektosact.com/installation/index.html](https://nektosact.com/installation/index.html)
+
+**Run tests:**
+- In a terminal at the root of the project
+    ```
+    act -W .github/workflows/pythonapp.yml
+    ```
 
 # Screenshots
 *Last Update 15/04/2020*
