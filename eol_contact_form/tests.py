@@ -1,17 +1,19 @@
 # -*- coding: utf-8 -*-
 
+# Python Standard Libraries
+from collections import namedtuple
 
+# Installed packages (via pip)
 from django.urls import reverse
 from django.test import TestCase
 from mock import patch
 
-from collections import namedtuple
-
+# Edx dependencies
 from openedx.core.djangoapps.site_configuration.tests.test_util import (
     with_site_configuration,
-    with_site_configuration_context,
 )
 
+# Internal project dependencies
 from . import views
 
 test_config = {

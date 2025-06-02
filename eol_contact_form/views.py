@@ -1,24 +1,22 @@
 # -*- coding: utf-8 -*-
+# Python Standard Libraries
+import logging
+from itertools import cycle
 
-
-from django.views.generic.base import View
-from django.urls import reverse
-from django.http import HttpResponse, HttpResponseRedirect, JsonResponse
-from django.shortcuts import render
-
+# Installed packages (via pip)
 from django.conf import settings
+from django.core.mail import EmailMultiAlternatives
+from django.http import HttpResponse
+from django.shortcuts import render
+from django.template.loader import render_to_string
+from django.utils.html import strip_tags
+from django.views.generic.base import View
+import requests
+
+# Edx dependencies
 from openedx.core.djangoapps.site_configuration import helpers as configuration_helpers
 
-from django.core.mail import EmailMultiAlternatives
-from django.utils.html import strip_tags
-from django.template.loader import render_to_string
 
-from itertools import cycle
-import requests
-import json
-
-
-import logging
 logger = logging.getLogger(__name__)
 
 def _default_data():
