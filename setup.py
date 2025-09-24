@@ -2,7 +2,7 @@ import setuptools
 
 setuptools.setup(
     name="eol_contact_form",
-    version="0.2.3",
+    version="0.2.4",
     author="Oficina EOL UChile",
     author_email="eol-ing@uchile.cl",
     description="Eol Contact Form",
@@ -16,9 +16,6 @@ setuptools.setup(
     ],
     entry_points={
         "lms.djangoapp": [
-            "eol_contact_form = eol_contact_form.apps:EolContactFormConfig",
-        ],
-         "cms.djangoapp": [
             "eol_contact_form = eol_contact_form.apps:EolContactFormConfig",
         ]
     },
