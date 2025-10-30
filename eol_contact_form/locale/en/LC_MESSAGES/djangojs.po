@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: OPEN 0.1.0\n"
 "Report-Msgid-Bugs-To: eol-ing@uchile.cl\n"
-"POT-Creation-Date: 2025-03-05 20:23+0000\n"
+"POT-Creation-Date: 2025-10-30 20:43+0000\n"
 "PO-Revision-Date: 2024-08-30 18:18+0000\n"
 "Last-Translator: EOL <eol-ing@uchile.cl>\n"
 "Language: en\n"
@@ -18,19 +18,31 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.17.0\n"
 
-#: eol_contact_form/static/eol_contact_form/js/main.js:24
+#: eol_contact_form/static/eol_contact_form/js/main.js:13
+msgid "New version"
+msgstr ""
+
+#: eol_contact_form/static/eol_contact_form/js/main.js:17
+msgid "I would love to have a new version of "
+msgstr ""
+
+#: eol_contact_form/static/eol_contact_form/js/main.js:17
+msgid " course. With course id: "
+msgstr ""
+
+#: eol_contact_form/static/eol_contact_form/js/main.js:35
 msgid "Specific course questions"
 msgstr ""
 
-#: eol_contact_form/static/eol_contact_form/js/main.js:34
+#: eol_contact_form/static/eol_contact_form/js/main.js:45
 msgid "Login problems"
 msgstr ""
 
-#: eol_contact_form/static/eol_contact_form/js/main.js:42
+#: eol_contact_form/static/eol_contact_form/js/main.js:53
 msgid "Teacher training"
 msgstr ""
 
-#: eol_contact_form/static/eol_contact_form/js/main.js:49
+#: eol_contact_form/static/eol_contact_form/js/main.js:60
 msgid "Honor code"
 msgstr ""
 
