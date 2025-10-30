@@ -11,7 +11,7 @@
 data = context.get('data', None)
 %>
 
-<main id="eol-contact" aria-label="Content" tabindex="-1" role="main" class="static_pages mt-0 eol-bg w-100 mx-auto contact-form" style="background-image: url(${static.url('open-uchile-theme/images/svg-2023/nodos_transparentes.png')});">
+<main id="eol-contact" aria-label="Content" tabindex="-1" role="main" class="static_pages mt-0 eol-bg w-100 mx-auto contact-form">
     <div class="container eol-content-container py-2 px-2 mx-auto">
         <div class="row">
             <div class="col-12">
@@ -60,6 +60,7 @@ data = context.get('data', None)
                                 <option value='${_("Content of a course")}'>${_("Content of a course")}</option>
                                 <option value='${_("Administrative")}'>${_("Administrative")}</option>
                                 <option value='${_("Evaluations")}'>${_("Evaluations")}</option>
+                                <option value='${_("New version")}'>${_("New version")}</option>
                             </optgroup>
                             <optgroup label='${_("Technical problems")}'>
                                 <option value='${_("Login problems")}'>${_("Login problems")}</option>
