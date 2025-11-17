@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: OPEN 0.1.0\n"
 "Report-Msgid-Bugs-To: eol-ing@uchile.cl\n"
-"POT-Creation-Date: 2025-10-30 20:43+0000\n"
+"POT-Creation-Date: 2025-11-17 16:17+0000\n"
 "PO-Revision-Date: 2024-08-30 18:18+0000\n"
 "Last-Translator: EOL <eol-ing@uchile.cl>\n"
 "Language: en\n"
@@ -27,7 +27,7 @@ msgid "I would love to have a new version of "
 msgstr ""
 
 #: eol_contact_form/static/eol_contact_form/js/main.js:17
-msgid " course. With course id: "
+msgid "course"
 msgstr ""
 
 #: eol_contact_form/static/eol_contact_form/js/main.js:35
