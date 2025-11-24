@@ -18,6 +18,7 @@ $(window).on('load',function() {
     }
 });
 $(function() {
+    const show_permanently_identifier = document.getElementById("config").dataset.showPermanentlyIdentifier === "True";
     const referrer = document.referrer;
     $('#form-referrer').val(referrer);
     show_course_name();
@@ -42,6 +43,10 @@ $(function() {
         }
     }
     function show_identifier() {
+        if (show_permanently_identifier) {
+            $('.form-identifier-text').show();
+            return;
+        }
         if($('#form-type').val() == gettext("Login problems")) {
             $('.form-identifier-text').show();
         } else {

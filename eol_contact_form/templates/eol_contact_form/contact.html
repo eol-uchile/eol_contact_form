@@ -9,9 +9,12 @@
 <link rel="stylesheet" type="text/css" href="${static.url('eol_contact_form/css/main.css')}"/>
 <%
 data = context.get('data', None)
+from openedx.core.djangoapps.site_configuration import helpers as configuration_helpers
+show_permanently_identifier = configuration_helpers.get_value('SHOW_IDENTIFIER',"False")
 %>
 
 <main id="eol-contact" aria-label="Content" tabindex="-1" role="main" class="static_pages mt-0 eol-bg w-100 mx-auto contact-form">
+    <div id="config" data-show-permanently-identifier="${show_permanently_identifier}"></div>
     <div class="container eol-content-container py-2 px-2 mx-auto">
         <div class="row">
             <div class="col-12">
