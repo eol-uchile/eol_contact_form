@@ -14,7 +14,7 @@ $(window).on('load',function() {
         $('.form-course-name').show();
         $("#form-course").prop('required',true);
         $('#form-course').val(urlParams.get('course'));
-        $('#form-message').val(gettext("I would love to have a new version of ") + urlParams.get('course') + gettext("course") + ".");
+        $('#form-message').val(gettext("I would love to have a new version of ") + urlParams.get('course') + " " + gettext("course") + ".");
     }
 });
 $(function() {
