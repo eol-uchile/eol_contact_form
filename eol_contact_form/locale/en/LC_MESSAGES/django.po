@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: OPEN 0.1.0\n"
 "Report-Msgid-Bugs-To: eol-ing@uchile.cl\n"
-"POT-Creation-Date: 2025-03-05 20:23+0000\n"
+"POT-Creation-Date: 2025-11-26 13:34+0000\n"
 "PO-Revision-Date: 2024-08-30 18:18+0000\n"
 "Last-Translator: EOL <eol-ing@uchile.cl>\n"
 "Language: en\n"
@@ -155,92 +155,100 @@ msgstr ""
 msgid "Evaluations"
 msgstr ""
 
-#: eol_contact_form/templates/eol_contact_form/contact.html:64
-msgid "Technical problems"
+#: eol_contact_form/templates/eol_contact_form/contact.html:63
+msgid "New run"
 msgstr ""
 
 #: eol_contact_form/templates/eol_contact_form/contact.html:65
-msgid "Login problems"
+msgid "Technical problems"
 msgstr ""
 
 #: eol_contact_form/templates/eol_contact_form/contact.html:66
-msgid "Identity verification"
+msgid "Login problems"
 msgstr ""
 
 #: eol_contact_form/templates/eol_contact_form/contact.html:67
+msgid "Identity verification"
+msgstr ""
+
+#: eol_contact_form/templates/eol_contact_form/contact.html:68
 msgid "Platform errors"
 msgstr ""
 
-#: eol_contact_form/templates/eol_contact_form/contact.html:69
+#: eol_contact_form/templates/eol_contact_form/contact.html:70
 msgid "Use of the platform"
 msgstr ""
 
-#: eol_contact_form/templates/eol_contact_form/contact.html:70
+#: eol_contact_form/templates/eol_contact_form/contact.html:71
 msgid "Creation of courses"
 msgstr ""
 
-#: eol_contact_form/templates/eol_contact_form/contact.html:71
+#: eol_contact_form/templates/eol_contact_form/contact.html:72
 msgid "Teacher training"
 msgstr ""
 
-#: eol_contact_form/templates/eol_contact_form/contact.html:72
+#: eol_contact_form/templates/eol_contact_form/contact.html:73
 msgid "Honor code"
 msgstr ""
 
-#: eol_contact_form/templates/eol_contact_form/contact.html:74
+#: eol_contact_form/templates/eol_contact_form/contact.html:75
 msgid "Other"
 msgstr ""
 
-#: eol_contact_form/templates/eol_contact_form/contact.html:75
-msgid "Congratulations"
-msgstr ""
-
 #: eol_contact_form/templates/eol_contact_form/contact.html:76
-msgid "Comments or suggestions"
+msgid "Change email address"
 msgstr ""
 
 #: eol_contact_form/templates/eol_contact_form/contact.html:77
+msgid "Congratulations"
+msgstr ""
+
+#: eol_contact_form/templates/eol_contact_form/contact.html:78
+msgid "Comments or suggestions"
+msgstr ""
+
+#: eol_contact_form/templates/eol_contact_form/contact.html:79
 msgid "Complaints"
 msgstr ""
 
-#: eol_contact_form/templates/eol_contact_form/contact.html:82
+#: eol_contact_form/templates/eol_contact_form/contact.html:84
 msgid "Please tell us the name of the course"
 msgstr ""
 
-#: eol_contact_form/templates/eol_contact_form/contact.html:83
+#: eol_contact_form/templates/eol_contact_form/contact.html:85
 msgid "Example: Introduction to EOL platform"
 msgstr ""
 
-#: eol_contact_form/templates/eol_contact_form/contact.html:86
+#: eol_contact_form/templates/eol_contact_form/contact.html:88
 msgid "Please indicate your RUT, DNI or passport"
 msgstr ""
 
-#: eol_contact_form/templates/eol_contact_form/contact.html:87
+#: eol_contact_form/templates/eol_contact_form/contact.html:89
 msgid "Example: 12.345.678-9 or A12345678"
 msgstr ""
 
-#: eol_contact_form/templates/eol_contact_form/contact.html:91
-#: eol_contact_form/templates/eol_contact_form/contact.html:96
+#: eol_contact_form/templates/eol_contact_form/contact.html:93
+#: eol_contact_form/templates/eol_contact_form/contact.html:98
 msgid "For more information, please visit "
 msgstr ""
 
-#: eol_contact_form/templates/eol_contact_form/contact.html:91
+#: eol_contact_form/templates/eol_contact_form/contact.html:93
 msgid "EOL"
 msgstr ""
 
-#: eol_contact_form/templates/eol_contact_form/contact.html:96
+#: eol_contact_form/templates/eol_contact_form/contact.html:98
 msgid "Terms and Conditions"
 msgstr ""
 
-#: eol_contact_form/templates/eol_contact_form/contact.html:100
+#: eol_contact_form/templates/eol_contact_form/contact.html:102
 msgid "Please tell us more about your question"
 msgstr ""
 
-#: eol_contact_form/templates/eol_contact_form/contact.html:101
+#: eol_contact_form/templates/eol_contact_form/contact.html:103
 msgid "Enter more details about what you want to tell us"
 msgstr ""
 
-#: eol_contact_form/templates/eol_contact_form/contact.html:107
+#: eol_contact_form/templates/eol_contact_form/contact.html:109
 msgid "Submit message"
 msgstr ""
 

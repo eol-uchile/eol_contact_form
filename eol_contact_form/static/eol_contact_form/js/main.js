@@ -5,6 +5,18 @@ var correctCaptcha = function(response) {
         $('.form-submit').prop('disabled', true);
     }
 };
+$(window).on('load',function() {
+    const queryString = window.location.search;
+    const urlParams = new URLSearchParams(queryString);
+    // get different types of url params
+    if (urlParams.has('course')){
+        $('#form-type').val(gettext("New run"));
+        $('.form-course-name').show();
+        $("#form-course").prop('required',true);
+        $('#form-course').val(urlParams.get('course'));
+        $('#form-message').val(gettext("I would like to participate in a new run of this course")+": " + urlParams.get('course'));
+    }
+});
 $(function() {
     const referrer = document.referrer;
     $('#form-referrer').val(referrer);
@@ -19,7 +31,6 @@ $(function() {
         show_eol_link();
         show_honor_link();
     });
-    
     function show_course_name() {
         if($('#form-type :selected').parent().attr('label') == gettext("Specific course questions")) {
             $('.form-course-name').show();

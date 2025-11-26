@@ -11,12 +11,12 @@
 data = context.get('data', None)
 %>
 
-<main id="eol-contact" aria-label="Content" tabindex="-1" role="main" class="static_pages mt-0 eol-bg w-100 mx-auto contact-form" style="background-image: url(${static.url('open-uchile-theme/images/svg-2023/nodos_transparentes.png')});">
+<main id="eol-contact" aria-label="Content" tabindex="-1" role="main" class="static_pages mt-0 eol-bg w-100 mx-auto contact-form">
     <div class="container eol-content-container py-2 px-2 mx-auto">
         <div class="row">
             <div class="col-12">
-                <h1 class="mb-0 pb-0">${_("Contact Form")}</h1>
-                <p class="text-center mt-0 pt-0 text-muted">${_("Fill out the form to contact our Help Desk and we will get back to you as soon as possible. Our office hours are Monday to Friday from 09:00 to 18:00 hrs (Santiago, Chile).")}</p>
+                <h1 class="mb-0 pb-0 pt-5">${_("Contact Form")}</h1>
+                <p class="text-center mt-0 pt-0 text-muted col-11 col-md-10 col-lg-8 mx-auto p-0 py-5">${_("Fill out the form to contact our Help Desk and we will get back to you as soon as possible. Our office hours are Monday to Friday from 09:00 to 18:00 hrs (Santiago, Chile).")}</p>
             </div>
             <div class="contact-card col-11 col-md-10 col-lg-8 mx-auto shadow-lg px-5 py-4 mt-2 mb-5 bg-white rounded-lg">
                 <form method="POST">
@@ -60,6 +60,7 @@ data = context.get('data', None)
                                 <option value='${_("Content of a course")}'>${_("Content of a course")}</option>
                                 <option value='${_("Administrative")}'>${_("Administrative")}</option>
                                 <option value='${_("Evaluations")}'>${_("Evaluations")}</option>
+                                <option value='${_("New run")}'>${_("New run")}</option>
                             </optgroup>
                             <optgroup label='${_("Technical problems")}'>
                                 <option value='${_("Login problems")}'>${_("Login problems")}</option>
@@ -72,6 +73,7 @@ data = context.get('data', None)
                                 <option value='${_("Honor code")}'>${_("Honor code")}</option>
                             </optgroup>
                             <optgroup label='${_("Other")}'>
+                                <option value='${_("Change email address")}'>${_("Change email address")}</option>
                                 <option value='${_("Congratulations")}'>${_("Congratulations")}</option>
                                 <option value='${_("Comments or suggestions")}'>${_("Comments or suggestions")}</option>
                                 <option value='${_("Complaints")}'>${_("Complaints")}</option>
