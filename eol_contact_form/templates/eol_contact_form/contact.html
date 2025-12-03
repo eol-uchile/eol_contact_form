@@ -17,11 +17,21 @@ show_permanently_identifier = configuration_helpers.get_value('SHOW_IDENTIFIER',
     <div id="config" data-show-permanently-identifier="${show_permanently_identifier}"></div>
     <div class="container eol-content-container py-2 px-2 mx-auto">
         <div class="row">
-            <div class="col-12">
+            <div class="col-12 pb-5">
                 <h1 class="mb-0 pb-0 pt-5">${_("Contact Form")}</h1>
-                <p class="text-center mt-0 pt-0 text-muted col-11 col-md-10 col-lg-8 mx-auto p-0 py-5">${_("Fill out the form to contact our Help Desk and we will get back to you as soon as possible. Our office hours are Monday to Friday from 09:00 to 18:00 hrs (Santiago, Chile).")}</p>
+                <div class="contact-border"></div>
             </div>
-            <div class="contact-card col-11 col-md-10 col-lg-8 mx-auto shadow-lg px-5 py-4 mt-2 mb-5 bg-white rounded-lg">
+            <div class="contact-card col-11 col-md-10 col-lg-8 mx-auto px-5 py-4 mt-2 mb-5 rounded-lg">
+                <p class="text-center mt-0 text-muted mx-auto p-0 pt-4">
+                    ${_("Fill out the form to contact ")}
+                    <strong>${ _("our Help Desk") }</strong>
+                    ${ _(" and we will get back to you as soon as possible.")}
+                </p>
+                <p class="text-center mt-0 text-muted mx-auto p-0 pb-5">  
+                   ${ _("Our office hours are") }
+                    <strong>${ _("Monday to Friday from 09:00 to 18:00 hrs ") }</strong>
+                    ${ _("(Santiago, Chile).") }
+                </p>
                 <form method="POST">
                     % if context.get('send_email_error', None):
                     <div class="alert error">
@@ -109,7 +119,7 @@ show_permanently_identifier = configuration_helpers.get_value('SHOW_IDENTIFIER',
                         <div class="google-recaptcha">
                             <div class="g-recaptcha" data-sitekey="${context.get('recaptcha_site_key', None)}" data-callback="correctCaptcha" data-expired-callback="correctCaptcha"></div>
                         </div>
-                        <input disabled class="btn mx-auto my-3 py-2 px-5 btn-outline-light form-submit" type="submit" value="${_('Submit message')}">
+                        <input disabled class="btn mx-auto my-3 py-2 px-5 btn-outline-light form-submit w-100" type="submit" value="${_('Submit message')}">
                     </center>
                 </form>
             </div>
