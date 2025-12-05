@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: OPEN 0.1.0\n"
 "Report-Msgid-Bugs-To: eol-ing@uchile.cl\n"
-"POT-Creation-Date: 2025-11-26 13:34+0000\n"
+"POT-Creation-Date: 2025-12-03 20:56+0000\n"
 "PO-Revision-Date: 2024-08-30 18:18+0000\n"
 "Last-Translator: EOL <eol-ing@uchile.cl>\n"
 "Language: es_419\n"
@@ -26,19 +26,19 @@ msgstr "Nueva versión"
 msgid "I would like to participate in a new run of this course"
 msgstr "Me gustaría participar en una nueva versión del curso"
 
-#: eol_contact_form/static/eol_contact_form/js/main.js:35
+#: eol_contact_form/static/eol_contact_form/js/main.js:36
 msgid "Specific course questions"
 msgstr "Preguntas de un curso específico"
 
-#: eol_contact_form/static/eol_contact_form/js/main.js:45
+#: eol_contact_form/static/eol_contact_form/js/main.js:50
 msgid "Login problems"
 msgstr "Problemas con inicio de sesión"
 
-#: eol_contact_form/static/eol_contact_form/js/main.js:53
+#: eol_contact_form/static/eol_contact_form/js/main.js:58
 msgid "Teacher training"
 msgstr "Formación docente"
 
-#: eol_contact_form/static/eol_contact_form/js/main.js:60
+#: eol_contact_form/static/eol_contact_form/js/main.js:65
 msgid "Honor code"
 msgstr "Código de honor"
 
