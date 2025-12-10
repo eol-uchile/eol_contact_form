@@ -61,25 +61,25 @@
 .contact-card{
     border: 1px #E3E3E3 solid;
     border-radius: 15px;
+    background-color: var(--background-component-color, #ffff);
 }
 
 #eol-contact .btn{
     box-shadow: none;
     color: #ffff;
     background: none;
-    background-color: rgba(0, 0, 0, 0);
-    background-color: var(--primary-color);
-    border-color: var(--primary-color);
+    background-color: var(--primary-color, blue);
+    border-color: var(--primary-color, blue);
     text-shadow: none;   
 }
 
 #eol-contact .btn:hover {
-    background-color: var(--primary-color-hover);
-    border-color: var(--primary-color-hover);
+    background-color: var(--primary-color-hover, green);
+    border-color: var(--primary-color-hover, green);
 }
 
 .contact-border{
-    border-top: 3px solid var(--primary-color);
+    border-top: 3px solid var(--primary-color, blue);
     width: 60px;
     display: flex;
     margin-left: auto;
