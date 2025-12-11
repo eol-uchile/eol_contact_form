@@ -5,7 +5,7 @@
 <%namespace name='static' file='/static_content.html'/>
 <%inherit file="../main.html" />
 <%block name="pagetitle">${_("Contact Form")}</%block>
-<script src="https://www.google.com/recaptcha/api.js?explicit&hl=en" async defer></script>
+<script src="https://www.google.com/recaptcha/api.js" async defer></script>
 <link rel="stylesheet" type="text/css" href="${static.url('eol_contact_form/css/main.css')}"/>
 <%
 data = context.get('data', None)
