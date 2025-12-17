@@ -2,7 +2,7 @@ import setuptools
 
 setuptools.setup(
     name="eol_contact_form",
-    version="0.5.2",
+    version="0.5.3",
     author="Oficina EOL UChile",
     author_email="eol-ing@uchile.cl",
     description="Eol Contact Form",
