@@ -6,6 +6,7 @@
 <%inherit file="../main.html" />
 <%block name="pagetitle">${_("Contact Form")}</%block>
 <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+<script src='https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit&hl=${LANGUAGE_CODE}'></script>
 <link rel="stylesheet" type="text/css" href="${static.url('eol_contact_form/css/main.css')}"/>
 <%
 data = context.get('data', None)
