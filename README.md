@@ -1,6 +1,8 @@
 # EOL CONTACT FORM
 
-![https://github.com/eol-uchile/eol_contact_form/actions](https://github.com/eol-uchile/eol_contact_form/workflows/Python%20application/badge.svg)
+![Coverage Status](/coverage-badge.svg)
+
+![https://github.com/eol-uchile/eol_contact_form/actions](https://github.com/eol-uchile/eol_contact_form/workflows/Python%20application/badge.svg) 
 
 New Page for Open Edx LMS (EOL) with a contact form
 
